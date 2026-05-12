@@ -2,7 +2,7 @@
 
 ## 0.1.0
 
-Initial public release metadata for the GrowSurf Android SDK.
+Initial public release metadata for the GrowSurf Android SDK. Maven Central publication is pending.
 
 - Defines the Maven Central coordinates for the core Android SDK.
 - Defines optional Branch, Adjust, and AppsFlyer attribution adapter coordinates.

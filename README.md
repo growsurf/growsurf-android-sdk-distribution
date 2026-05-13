@@ -2,8 +2,6 @@
 
 Public distribution metadata for the GrowSurf Android SDK. The SDK implementation source is private; Android customers install compiled artifacts from Maven Central.
 
-> Status: Maven Central publication for `0.1.0` is pending. Use these coordinates only after the artifacts resolve on Maven Central.
-
 ## Installation
 
 Add Maven Central and the core SDK dependency.

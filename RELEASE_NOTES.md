@@ -1,6 +1,6 @@
 # Release Notes
 
-## 0.1.0
+## 0.2.0
 
 Initial public release of the GrowSurf Android SDK on Maven Central.
 

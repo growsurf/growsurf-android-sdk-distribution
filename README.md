@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.growsurf:growsurf-android-sdk:0.1.0")
+    implementation("com.growsurf:growsurf-android-sdk:0.2.0")
 }
 ```
 
@@ -26,7 +26,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.growsurf:growsurf-android-sdk:0.1.0'
+    implementation 'com.growsurf:growsurf-android-sdk:0.2.0'
 }
 ```
 
@@ -36,9 +36,9 @@ Optional attribution adapters are published separately. They do not bundle vendo
 
 ```kotlin
 dependencies {
-    implementation("com.growsurf:growsurf-android-sdk-attribution-branch:0.1.0")
-    implementation("com.growsurf:growsurf-android-sdk-attribution-adjust:0.1.0")
-    implementation("com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.1.0")
+    implementation("com.growsurf:growsurf-android-sdk-attribution-branch:0.2.0")
+    implementation("com.growsurf:growsurf-android-sdk-attribution-adjust:0.2.0")
+    implementation("com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.2.0")
 }
 ```
 
@@ -46,9 +46,9 @@ dependencies {
 
 ```groovy
 dependencies {
-    implementation 'com.growsurf:growsurf-android-sdk-attribution-branch:0.1.0'
-    implementation 'com.growsurf:growsurf-android-sdk-attribution-adjust:0.1.0'
-    implementation 'com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.1.0'
+    implementation 'com.growsurf:growsurf-android-sdk-attribution-branch:0.2.0'
+    implementation 'com.growsurf:growsurf-android-sdk-attribution-adjust:0.2.0'
+    implementation 'com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.2.0'
 }
 ```
 
@@ -56,10 +56,10 @@ Manual AAR installation is a fallback only. Maven Central is the recommended ins
 
 ## Maven Coordinates
 
-- `com.growsurf:growsurf-android-sdk:0.1.0`
-- `com.growsurf:growsurf-android-sdk-attribution-branch:0.1.0`
-- `com.growsurf:growsurf-android-sdk-attribution-adjust:0.1.0`
-- `com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.1.0`
+- `com.growsurf:growsurf-android-sdk:0.2.0`
+- `com.growsurf:growsurf-android-sdk-attribution-branch:0.2.0`
+- `com.growsurf:growsurf-android-sdk-attribution-adjust:0.2.0`
+- `com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.2.0`
 
 ## Documentation
 

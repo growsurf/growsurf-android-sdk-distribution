@@ -30,7 +30,7 @@ dependencies {
 }
 ```
 
-Optional attribution adapters are published separately. They do not bundle vendor SDKs; your app still owns Branch, Adjust, or AppsFlyer setup.
+Optional attribution adapters are published separately. They do not bundle vendor SDKs; your app still owns Branch, Adjust, AppsFlyer, or Singular setup.
 
 ### Kotlin DSL
 
@@ -39,6 +39,7 @@ dependencies {
     implementation("com.growsurf:growsurf-android-sdk-attribution-branch:0.2.0")
     implementation("com.growsurf:growsurf-android-sdk-attribution-adjust:0.2.0")
     implementation("com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.2.0")
+    implementation("com.growsurf:growsurf-android-sdk-attribution-singular:0.2.0")
 }
 ```
 
@@ -49,6 +50,7 @@ dependencies {
     implementation 'com.growsurf:growsurf-android-sdk-attribution-branch:0.2.0'
     implementation 'com.growsurf:growsurf-android-sdk-attribution-adjust:0.2.0'
     implementation 'com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.2.0'
+    implementation 'com.growsurf:growsurf-android-sdk-attribution-singular:0.2.0'
 }
 ```
 
@@ -60,6 +62,7 @@ Manual AAR installation is a fallback only. Maven Central is the recommended ins
 - `com.growsurf:growsurf-android-sdk-attribution-branch:0.2.0`
 - `com.growsurf:growsurf-android-sdk-attribution-adjust:0.2.0`
 - `com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.2.0`
+- `com.growsurf:growsurf-android-sdk-attribution-singular:0.2.0`
 
 ## Documentation
 

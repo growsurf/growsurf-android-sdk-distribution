@@ -1,5 +1,13 @@
 # Release Notes
 
+## 0.2.1
+
+Security hardening for the native GrowSurf window cache and the in-window image loader.
+
+- Encrypts the window cache via `EncryptedSharedPreferences` (AES-256-GCM values, AES-256-SIV keys, MasterKey-wrapped) so participant data no longer sits in plaintext `SharedPreferences`. Legacy `growsurf_window_cache` entries are cleared on first use.
+- Re-validates every redirect hop in the in-window remote image loader against the supported scheme allow-list and propagates an `https`-required flag through the chain to block `https → http` downgrade attempts.
+- No public API or installation changes. Source-compatible upgrade from 0.2.0.
+
 ## 0.2.0
 
 Adds the native GrowSurf window beta and expands attribution adapter coverage.

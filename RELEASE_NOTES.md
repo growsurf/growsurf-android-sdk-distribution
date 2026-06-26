@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.3.2
+
+Version alignment with the iOS 0.3.2 release. No functional or public API changes from 0.3.1.
+
 ## 0.3.1
 
 Tax Documentation support in the native GrowSurf window, Google Contacts and QR fixes, and internal cleanup. Source-compatible upgrade from 0.3.0.

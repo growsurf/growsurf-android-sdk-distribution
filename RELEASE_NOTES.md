@@ -1,5 +1,16 @@
 # Release Notes
 
+## 0.3.1
+
+Tax Documentation support in the native GrowSurf window, Google Contacts and QR fixes, and internal cleanup. Source-compatible upgrade from 0.3.0.
+
+- Adds support for the Tax Documentation hosted action: when a campaign requires tax forms, the native window's participant settings expose a **Tax Forms** row that opens the secure hosted W-9 / W-8 flow (tax IDs never touch the app). Call `requestTaxInfoSession()` if you build a custom settings UI instead.
+- Adds a native residency / VAT picker and an expanded country list (including Kosovo) for the hosted tax flow.
+- Surfaces a clear "try again later" message when a tax-form submission hits a transient backend error.
+- Fixes a silent failure in the native-window Google Contacts authorization flow.
+- Improves the in-window QR code.
+- Internal correctness fixes, campaign-driven copy, and parity; no breaking public API changes.
+
 ## 0.3.0
 
 Public API cleanup. Clean break from 0.2.1 (no shipped consumers, no back-compat shims).

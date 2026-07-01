@@ -1,5 +1,14 @@
 # Release Notes
 
+## 0.3.3
+
+Native GrowSurf window payout UI polish. Source-compatible upgrade from 0.3.2; no public API changes.
+
+- Adds a PayPal "Connected" badge and confirmation note in the native window once a participant's PayPal payout email is confirmed, plus a PayPal brand icon.
+- Adds info-tooltips explaining each commission status (pending, approved, paid, reversed) and payout status (upcoming, queued, issued, failed).
+- Adds a refresh control for payout status.
+- Copy from the campaign payload takes precedence over the SDK's English defaults where available.
+
 ## 0.3.2
 
 Version alignment with the iOS 0.3.2 release. No functional or public API changes from 0.3.1.

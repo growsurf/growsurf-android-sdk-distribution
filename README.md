@@ -4,6 +4,8 @@ Public distribution metadata for the GrowSurf Android SDK. The SDK implementatio
 
 ## Installation
 
+Your app must use `minSdk` 24 or higher and `compileSdk` 36 or higher. Set `targetSdk` separately, to the level Google Play currently requires for app updates.
+
 Add Maven Central and the core SDK dependency.
 
 ### Kotlin DSL
@@ -14,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.growsurf:growsurf-android-sdk:0.3.3")
+    implementation("com.growsurf:growsurf-android-sdk:0.4.0")
 }
 ```
 
@@ -26,7 +28,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.growsurf:growsurf-android-sdk:0.3.3'
+    implementation 'com.growsurf:growsurf-android-sdk:0.4.0'
 }
 ```
 
@@ -36,10 +38,10 @@ Optional attribution adapters are published separately. They do not bundle vendo
 
 ```kotlin
 dependencies {
-    implementation("com.growsurf:growsurf-android-sdk-attribution-branch:0.3.3")
-    implementation("com.growsurf:growsurf-android-sdk-attribution-adjust:0.3.3")
-    implementation("com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.3.3")
-    implementation("com.growsurf:growsurf-android-sdk-attribution-singular:0.3.3")
+    implementation("com.growsurf:growsurf-android-sdk-attribution-branch:0.4.0")
+    implementation("com.growsurf:growsurf-android-sdk-attribution-adjust:0.4.0")
+    implementation("com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.4.0")
+    implementation("com.growsurf:growsurf-android-sdk-attribution-singular:0.4.0")
 }
 ```
 
@@ -47,10 +49,10 @@ dependencies {
 
 ```groovy
 dependencies {
-    implementation 'com.growsurf:growsurf-android-sdk-attribution-branch:0.3.3'
-    implementation 'com.growsurf:growsurf-android-sdk-attribution-adjust:0.3.3'
-    implementation 'com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.3.3'
-    implementation 'com.growsurf:growsurf-android-sdk-attribution-singular:0.3.3'
+    implementation 'com.growsurf:growsurf-android-sdk-attribution-branch:0.4.0'
+    implementation 'com.growsurf:growsurf-android-sdk-attribution-adjust:0.4.0'
+    implementation 'com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.4.0'
+    implementation 'com.growsurf:growsurf-android-sdk-attribution-singular:0.4.0'
 }
 ```
 
@@ -58,11 +60,11 @@ Manual AAR installation is a fallback only. Maven Central is the recommended ins
 
 ## Maven Coordinates
 
-- `com.growsurf:growsurf-android-sdk:0.3.3`
-- `com.growsurf:growsurf-android-sdk-attribution-branch:0.3.3`
-- `com.growsurf:growsurf-android-sdk-attribution-adjust:0.3.3`
-- `com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.3.3`
-- `com.growsurf:growsurf-android-sdk-attribution-singular:0.3.3`
+- `com.growsurf:growsurf-android-sdk:0.4.0`
+- `com.growsurf:growsurf-android-sdk-attribution-branch:0.4.0`
+- `com.growsurf:growsurf-android-sdk-attribution-adjust:0.4.0`
+- `com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.4.0`
+- `com.growsurf:growsurf-android-sdk-attribution-singular:0.4.0`
 
 ## Documentation
 

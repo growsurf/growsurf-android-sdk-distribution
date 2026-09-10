@@ -1,5 +1,26 @@
 # Release Notes
 
+## 0.4.0
+
+Mobile visit attribution, participant sign-in, multi-provider payout destinations, and expanded participant data in the native GrowSurf window. This release contains source-breaking API cleanup from 0.3.3; review the changed and removed fields below.
+
+- Adds versioned mobile visit attribution with UTM context, safe destination data, stable visit IDs, durable retry, and signed first-visit and last-visit receipts. `clearPendingAttribution()` and `shutdown()` clear queued visits and receipts. A transient `PROCESSING` response stays queued for retry.
+- Adds `GrowSurfAttributionUtm`, `GrowSurfAttributionUrl`, `GrowSurfAttributionTrigger`, `GrowSurfAttributionProvider`, and `GrowSurfVisitAttribution`. `GrowSurfAttributionResponse` now includes visit acceptance, availability, uniqueness, and receipt fields.
+- Expands participant metadata from `Map<String, String>` to `Map<String, Any?>` so custom metadata can contain JSON-compatible values.
+- Adds fields to public campaign reward, participant, participant creation, attribution, invite, and payout data classes. Recompile consumers and prefer named properties when constructing or reading these models.
+- Adds participant sign-in to the native window. Its Sign in sheet uses the program's configured form and status copy, then emails a link that opens the hosted web portal. It does not authenticate the native app; native sessions still use participant tokens created by the app's backend.
+- Adds a payout destinations view under Settings > Payouts when a campaign offers more than one payout provider: per-provider connection status, the confirmed payout email, and a prompt to choose how to get paid. Campaigns that only use PayPal keep the existing PayPal UI unchanged.
+- Adds `requestPayoutDestinationConfirmation(provider)` to email a participant a confirmation link for a payout provider.
+- Aligns the Sign in and signup sheets with the web window: leading-aligned copy, campaign-themed inputs, and a full-width themed button.
+- Removes `GrowSurfLeaderboardResponse.offsetKey`. The API never returned it, so it was always `null`. Use `nextKey` for the leaderboard cursor. The `offsetKey` argument on `getLeaderboard()` is unchanged.
+- Removes `GrowSurfTaxInfo.vatCountryCode`. The API never returned it, so it was always `null`. Read `GrowSurfTaxInfo.residencyCountryCode` for the participant's saved country of tax residence. It was the fifth parameter of that data class, so build `GrowSurfTaxInfo` with named arguments if you construct or destructure it.
+- Removes `GrowSurfReward.title`, `GrowSurfReward.description`, and `GrowSurfWindowResponse.beta`. The mobile API does not return these fields.
+- Changes `GrowSurfTaxInfo.payoutSettings` from `GrowSurfPayoutSettings?` to `GrowSurfTaxInfoRefreshPayoutSettings?`. The refresh response exposes only `hostedActions` and `requiredActions`.
+- Changes `saveTaxVat(vatNumber, vatCountryCode)` to `saveTaxVat(vatNumber)`. The VAT country was always a copy of the saved residence country, so the argument carried no new information. Drop the second argument at your call site.
+- Moves the SDK's encrypted token and window-cache storage onto Android Keystore AES-256-GCM directly, under a GrowSurf-specific key so it no longer shares a key with other libraries in your app. This also removes the `androidx.security:security-crypto` dependency. The preference file names your backup rules exclude are unchanged, and there are no public API or installation changes.
+- Upgrading from 0.3.x discards the SDK's locally stored tokens once, because the previous storage format cannot be read without the removed dependency. The session token is re-minted automatically and the window cache re-fetches; supply the participant token again with `setParticipantToken` if your app holds one.
+- Recovers automatically when the Android Keystore key cannot be restored, which happens after a device restore or transfer. The SDK clears only its own token and window-cache files and continues.
+
 ## 0.3.3
 
 Native GrowSurf window payout UI polish. Source-compatible upgrade from 0.3.2; no public API changes.

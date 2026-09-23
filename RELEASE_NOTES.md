@@ -1,5 +1,14 @@
 # Release Notes
 
+## 0.5.0
+
+The native GrowSurf window now shows one section at a time in tabs and adds a participant Traffic report. This is a source-compatible upgrade from 0.4.0; apps do not need new SDK calls.
+
+- Participants can choose a section in the Stats and affiliate Rewards tabs. List layouts keep their separate detail screens.
+- When a program enables Traffic, participants can view visits over time, choose a share link and date range, and see where visits came from. The report uses the program's configured labels and messages.
+- Traffic breakdown rows show source marks, country flags, or site icons where available. Privacy settings suppress site icon requests.
+- Scrolling section and breakdown controls keep the selected item visible on narrow screens.
+
 ## 0.4.0
 
 Mobile visit attribution, participant sign-in, multi-provider payout destinations, and expanded participant data in the native GrowSurf window. This release contains source-breaking API cleanup from 0.3.3; review the changed and removed fields below.

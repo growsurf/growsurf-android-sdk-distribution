@@ -1,5 +1,15 @@
 # Release Notes
 
+## 0.6.0
+
+This source-compatible release adds receipt-aware referral-only signup and improves the native GrowSurf Window.
+
+- `addReferredParticipant` can submit signed visit receipts when a later referral code is missing or invalid. Its `referredBy` result reflects the referrer credited by the API.
+- `GrowSurfParticipant.referredBy` exposes the server-selected referrer when the API includes it.
+- Section changes preserve Window content and pull-to-refresh behavior. Cancelled first-page loads do not report an error to the host app.
+- The Window adds coordinated motion for selections, headline counts, and earned rewards, with Reduce Motion support.
+- Older campaign payloads receive a fallback Venmo availability notice. Configured campaign copy still takes priority.
+
 ## 0.5.0
 
 The native GrowSurf window now shows one section at a time in tabs and adds a participant Traffic report. This is a source-compatible upgrade from 0.4.0; apps do not need new SDK calls.

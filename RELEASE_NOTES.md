@@ -1,5 +1,13 @@
 # Release Notes
 
+## 0.7.0
+
+The native GrowSurf Window adds invitation follow-up and invited email visibility.
+
+- Participants can confirm a Follow up action to send an invitation again when the program uses Company as the Invite Email sender and the three-day waiting period has passed. Contacts who have signed up do not show the action.
+- When the program allows invited email visibility after sign-in, participants can see the full email addresses of people they invited. Other referral email addresses stay masked, and long addresses wrap onto more lines.
+- Participant and referral models add optional `leadCount`, follow-up availability fields, and `displayStatus`. Existing participant constructors and `copy` calls stay compatible.
+
 ## 0.6.0
 
 This source-compatible release adds receipt-aware referral-only signup and improves the native GrowSurf Window.

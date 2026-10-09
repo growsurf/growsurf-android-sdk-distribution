@@ -1,5 +1,10 @@
 # Release Notes
 
+## 0.8.0
+
+- Adds program language configuration and participant language selection in the native GrowSurf Window.
+- Sends device language preferences and displays dates, numbers, and country names in the program language.
+
 ## 0.7.0
 
 The native GrowSurf Window adds invitation follow-up and invited email visibility.

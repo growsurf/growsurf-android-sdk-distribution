@@ -1,5 +1,12 @@
 # Release Notes
 
+## 0.9.0
+
+- Keeps participant language changes in place when the native Window refreshes.
+- Adds response methods that return the Mobile API JSON from the same request, alongside the existing typed methods.
+- Identifies React Native requests and saved activity while preserving the iOS or Android platform and the referral relationship.
+- Preserves participant resource data when forwarding Window responses to React Native.
+
 ## 0.8.0
 
 - Adds program language configuration and participant language selection in the native GrowSurf Window.

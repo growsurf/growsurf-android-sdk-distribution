@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.9.1
+
+- Reports `MISSING_PARTICIPANT_TOKEN` through `onError` when the native Window needs a backend-issued participant token for an existing participant.
+
 ## 0.9.0
 
 - Keeps participant language changes in place when the native Window refreshes.

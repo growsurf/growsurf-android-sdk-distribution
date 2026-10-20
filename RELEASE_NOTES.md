@@ -1,5 +1,10 @@
 # Release Notes
 
+## 0.10.1
+
+- Rounds fractional money amounts to the nearest smallest currency unit, such as a cent, in the Affiliate Summary, Leaderboard, Commissions, and Payouts. Before, the SDK dropped the fraction instead of rounding it.
+- Loads each native GrowSurf Window section only from its own Mobile API endpoint, and reads a reward's ID only from `rewardId`, as the Mobile API sends it.
+
 ## 0.10.0
 
 - Adds referral status badges, status tooltips, and a sort and filter menu to the native GrowSurf Window.

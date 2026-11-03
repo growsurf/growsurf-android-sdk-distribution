@@ -1,5 +1,13 @@
 # Release Notes
 
+## 0.10.2
+
+- Shows an optional bold title above each How It Works step, and an uploaded step image in place of the step number, as the web GrowSurf Window does.
+- Fills `{{campaignReward['<id>']['<key>']}}` tokens in Window copy from Campaign Reward metadata, as the web GrowSurf Window does.
+- Shows saved referral reward descriptions in Rewards. `GrowSurfReward` adds optional `description` and `rewardValue`.
+- Makes `GROWSURF_SDK_VERSION` public, like `growSurfSDKVersion` on iOS.
+- Keeps the app framework a referral visit was recorded with when the SDK sends that visit later, so React Native visits stay labeled after an app update.
+
 ## 0.10.1
 
 - Rounds fractional money amounts to the nearest smallest currency unit, such as a cent, in the Affiliate Summary, Leaderboard, Commissions, and Payouts. Before, the SDK dropped the fraction instead of rounding it.

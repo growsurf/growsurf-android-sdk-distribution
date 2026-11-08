@@ -1,5 +1,12 @@
 # Release Notes
 
+## 0.10.3
+
+- Shows each saved earned-reward description once while keeping the full earned count.
+- Shows only approved, non-cancelled rewards in the participant window.
+- Resolves saved reward metadata in window copy, including metadata for rewards outside the visible list.
+- Preserves large earned-reward amounts.
+
 ## 0.10.2
 
 - Shows an optional bold title above each How It Works step, and an uploaded step image in place of the step number, as the web GrowSurf Window does.

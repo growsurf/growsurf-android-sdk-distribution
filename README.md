@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.growsurf:growsurf-android-sdk:0.10.3")
+    implementation("com.growsurf:growsurf-android-sdk:0.10.4")
 }
 ```
 
@@ -28,7 +28,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.growsurf:growsurf-android-sdk:0.10.3'
+    implementation 'com.growsurf:growsurf-android-sdk:0.10.4'
 }
 ```
 
@@ -38,10 +38,10 @@ Optional attribution adapters are published separately. They do not bundle vendo
 
 ```kotlin
 dependencies {
-    implementation("com.growsurf:growsurf-android-sdk-attribution-branch:0.10.3")
-    implementation("com.growsurf:growsurf-android-sdk-attribution-adjust:0.10.3")
-    implementation("com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.10.3")
-    implementation("com.growsurf:growsurf-android-sdk-attribution-singular:0.10.3")
+    implementation("com.growsurf:growsurf-android-sdk-attribution-branch:0.10.4")
+    implementation("com.growsurf:growsurf-android-sdk-attribution-adjust:0.10.4")
+    implementation("com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.10.4")
+    implementation("com.growsurf:growsurf-android-sdk-attribution-singular:0.10.4")
 }
 ```
 
@@ -49,10 +49,10 @@ dependencies {
 
 ```groovy
 dependencies {
-    implementation 'com.growsurf:growsurf-android-sdk-attribution-branch:0.10.3'
-    implementation 'com.growsurf:growsurf-android-sdk-attribution-adjust:0.10.3'
-    implementation 'com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.10.3'
-    implementation 'com.growsurf:growsurf-android-sdk-attribution-singular:0.10.3'
+    implementation 'com.growsurf:growsurf-android-sdk-attribution-branch:0.10.4'
+    implementation 'com.growsurf:growsurf-android-sdk-attribution-adjust:0.10.4'
+    implementation 'com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.10.4'
+    implementation 'com.growsurf:growsurf-android-sdk-attribution-singular:0.10.4'
 }
 ```
 
@@ -60,11 +60,11 @@ Manual AAR installation is a fallback only. Maven Central is the recommended ins
 
 ## Maven Coordinates
 
-- `com.growsurf:growsurf-android-sdk:0.10.3`
-- `com.growsurf:growsurf-android-sdk-attribution-branch:0.10.3`
-- `com.growsurf:growsurf-android-sdk-attribution-adjust:0.10.3`
-- `com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.10.3`
-- `com.growsurf:growsurf-android-sdk-attribution-singular:0.10.3`
+- `com.growsurf:growsurf-android-sdk:0.10.4`
+- `com.growsurf:growsurf-android-sdk-attribution-branch:0.10.4`
+- `com.growsurf:growsurf-android-sdk-attribution-adjust:0.10.4`
+- `com.growsurf:growsurf-android-sdk-attribution-appsflyer:0.10.4`
+- `com.growsurf:growsurf-android-sdk-attribution-singular:0.10.4`
 
 ## Documentation
 

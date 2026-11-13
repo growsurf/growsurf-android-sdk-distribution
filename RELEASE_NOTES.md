@@ -1,5 +1,11 @@
 # Release Notes
 
+## 0.10.4
+
+- Reads a reward group signup code (`grsf_group`) from a referral link. Before signup, the GrowSurf Window shows that group's rewards, and the new participant joins the group. `GrowSurfAttribution` adds optional `groupCode`.
+- Keeps an earlier pending referrer when a later link has only `grsf_group`.
+- Shows the GrowSurf logo in the "Powered by" footer in the Window's secondary text color.
+
 ## 0.10.3
 
 - Shows each saved earned-reward description once while keeping the full earned count.
